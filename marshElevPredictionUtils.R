@@ -49,6 +49,7 @@ getSLRdiff<-function(mslra,mslrb,slr,timeSpan=100){
 
 makeElevRasters<-function(mstk,slr=1,timeSpan=100,byOut=10,c=1.6,accLog=TRUE){
 	#get the slrDiff data
+	#adding a comment is useful
 	slrdata<-getSLRdiff(mslra=mslra,mslrb=mslrb,slr=slr,timeSpan=timeSpan)
 	#get output years
 	outyears<-seq(0,timeSpan,by=byOut);outyears<-outyears[-1]
